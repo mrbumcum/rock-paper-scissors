@@ -25,7 +25,7 @@ function getHumanChoice() {
         (computerChoice === "scissors" && humanChoice === "paper")
     ) {
         computerScore++;
-        console.log(`You lose! ${humanChoice} beats ${getHumanChoice}`)
+        console.log(`You lose! ${humanChoice} beats ${humanChoice}`)
     } else if (computerChoice === getHumanChoice) {
         console.log("It's a draw!")
     } else {
