@@ -10,11 +10,9 @@ function getHumanChoice() {
         humanChoice = humanChoice.toLowerCase();
     
         if (humanChoice === 'rock' || humanChoice == 'paper' || humanChoice == 'scissors') {
-            break;
+            return humanChoice;
         }
     }
-
-    return humanChoice;
  }
 
  function playRound(getComputerChoice, getHumanChoice) {
@@ -55,3 +53,5 @@ function getHumanChoice() {
         console.log("Oh no! The computer won.")
     }
 }
+
+playGame(5);
