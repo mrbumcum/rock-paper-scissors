@@ -15,7 +15,7 @@ function getHumanChoice() {
     }
  }
 
- function playRound(getComputerChoice, getHumanChoice) {
+ function playRound() {
     const computerChoice = getComputerChoice();
     const humanChoice = getHumanChoice();
 
