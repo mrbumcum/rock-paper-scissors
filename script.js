@@ -16,18 +16,21 @@ function getHumanChoice() {
  }
 
  function playRound(getComputerChoice, getHumanChoice) {
+    const computerChoice = getComputerChoice();
+    const humanChoice = getHumanChoice();
+
     if (
-        (getComputerChoice() === "rock" && getHumanChoice() === "scissors")||
-        (getComputerChoice() === "paper" && getHumanChoice() === "rock") ||
-        (getComputerChoice() === "scissors" && getHumanChoice() === "paper")
+        (computerChoice === "rock" && humanChoice === "scissors")||
+        (computerChoice === "paper" && humanChoice === "rock") ||
+        (computerChoice === "scissors" && humanChoice === "paper")
     ) {
         computerScore++;
-        console.log(`You lose! ${getComputerChoice()} beats ${getHumanChoice}`)
-    } else if (getComputerChoice() === getHumanChoice) {
+        console.log(`You lose! ${humanChoice} beats ${getHumanChoice}`)
+    } else if (computerChoice === getHumanChoice) {
         console.log("It's a draw!")
     } else {
         humanScore++;
-        console.log(`You win! ${getHumanChoice()} beats ${getComputerChoice}`)
+        console.log(`You win! ${computerChoice} beats ${computerChoice}`)
     }
  }
 
