@@ -35,13 +35,9 @@ function getHumanChoice() {
  }
 
  function playGame(triesAmount) {
-     let humanScore = 0;
-     let computerScore = 0;
 
     for(let i = 0; i < triesAmount; i++) {
-        humanChoice = getHumanChoice();
-        computerChoice = getComputerChoice();
-        playRound(computerChoice, humanChoice);
+        playRound();
     }
 
     console.log("Final Scores:");
@@ -56,5 +52,8 @@ function getHumanChoice() {
         console.log("Oh no! The computer won.")
     }
 }
+
+let humanScore = 0;
+let computerScore = 0;
 
 playGame(5);
