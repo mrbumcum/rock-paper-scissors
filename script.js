@@ -35,6 +35,8 @@ function getHumanChoice() {
  }
 
  function playGame(triesAmount) {
+    humanScore = 0;
+    computerScore = 0;
 
     for(let i = 0; i < triesAmount; i++) {
         playRound();
