@@ -9,3 +9,35 @@
     padding: 0;
 }
 
+/* Initial Configuration */
+.rps-title,
+.container,
+.scoreboard,
+.scores-container,
+.rps-choices {
+    display: flex;
+}
+
+/* Title Layer of the Website */
+.rps-title {
+    justify-content: center;
+    padding: 2rem;
+    background-color: #AF8F6F;
+    background-color: hsl(0, 100%, 4%);
+
+}
+
+.header-font {
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    color: hsl(53, 99%, 50%);
+}
+
+/* Second Layer of the Website */
+
+.container {
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F4E1;
+    padding: 2rem;
+}

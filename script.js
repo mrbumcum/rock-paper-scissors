@@ -54,5 +54,3 @@ function getHumanChoice() {
         console.log("Oh no! The computer won.")
     }
 }
-
-playGame(5);
