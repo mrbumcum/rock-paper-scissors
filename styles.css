@@ -78,4 +78,23 @@ body {
 
 .rps-choices {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rockBtn,
+#paperBtn,
+#scissorsBtn {
+    background-color: hsla(0, 9%, 43%, 0.793);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 2em;
+    margin: 2em;
+    height: 8rem;
+    width: 8rem;
+}
+
+.choice-image {
+    font-size: 5em;
 }
