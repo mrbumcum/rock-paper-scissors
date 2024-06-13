@@ -1,37 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="rps-title">
+            <h1 class="title-font">Rock Paper Scissors</h1>
+        </div> 
+        <div class="container">
+            <div class="scoreboard">
+                <h2 class="header-font">Welcome to Rock Paper Scissors</h2>
+                <h3 class="header-font">First to 5 Points Wins.</h3>
+            </div>
+            <div class="scores-container">
+                <div class="score-card">
+                    <div class="score-image" id="humanImg">?</div>
+                    <p>Human Player</p>
+                    <p id="humanScore">Score: 0</p>
+                </div>
+                <div class="score-card" id="">
+                    <div class="score-image" id="computerImg">?</div>
+                    <p>Computer Player</p>
+                    <p id="computerScore">Score: 0</p>
+                </div>
+            </div>
+            <div class="rps-choices">
+                <button id="rockBtn" alt="Rock"><div class="choice-image">✊</div></button>
+                <button id="paperBtn" alt="Paper"><div class="choice-image">👋</div></button>
+                <button id="scissorsBtn" alt="Scissors"><div class="choice-image">&#128406;</div></button>
+            </div>
+        </div>
+        
+    </body>
+    </html>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="rps-title">
-        <h1 class="title-font">Rock Paper Scissors</h1>
-    </div> 
-    <div class="container">
-        <div class="scoreboard">
-            <h2 class="header-font">Welcome to Rock Paper Scissors</h2>
-            <h3 class="header-font">First to 5 Points Wins.</h3>
-        </div>
-        <div class="scores-container">
-            <div class="score-card">
-                <div class="score-image">?</div>
-                <p>Human Player</p>
-            </div>
-            <div class="score-card">
-                <div class="score-image">?</div>
-                <p>Computer Player</p>
-            </div>
-        </div>
-        <div class="rps-choices">
-            <button id="rockBtn" alt="Rock"><div class="choice-image">✊</div></button>
-            <button id="paperBtn" alt="Paper"><div class="choice-image">👋</div></button>
-            <button id="scissorsBtn" alt="Scissors"><div class="choice-image">&#128406;</div></button>
-        </div>
-    </div>
-    
-</body>
-</html>
