@@ -40,8 +40,6 @@ body {
 /* Second Layer of the Website */
 
 .container {
-    justify-content: center;
-    align-items: center;
     padding: 2rem;
 }
 
@@ -76,4 +74,8 @@ body {
 .score-image {
     font-size: 8em;
     margin-bottom: 0.12;
+}
+
+.rps-choices {
+    display: flex;
 }
