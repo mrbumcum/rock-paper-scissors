@@ -10,16 +10,16 @@
 }
 
 /* Initial Configuration */
-.rps-title,
-.container,
-.scoreboard,
-.scores-container,
-.rps-choices {
-    display: flex;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: hsla(60, 3%, 6%, 0.943);
+    color: white;
 }
 
 /* Title Layer of the Website */
 .rps-title {
+    display: flex;
     justify-content: center;
     padding: 2rem;
     background-color: #AF8F6F;
@@ -27,10 +27,14 @@
 
 }
 
-.header-font {
+.header-font,
+.title-font {
     font-family: Arial, sans-serif;
-    font-size: 3em;
     color: hsl(53, 99%, 50%);
+}
+
+.title-font {
+    font-size: 3em;
 }
 
 /* Second Layer of the Website */
@@ -38,6 +42,38 @@
 .container {
     justify-content: center;
     align-items: center;
-    background-color: #F8F4E1;
     padding: 2rem;
+}
+
+.scoreboard {
+    margin-bottom: 2em;
+}
+
+.scores-container {
+    display: flex;
+    justify-content: center;
+}
+
+.scoreboard .header-font {
+    display: flex;
+    margin-bottom: 0.5em;
+    justify-content: center;
+}
+
+.score-card {
+    background-color: hsla(0, 9%, 43%, 0.793);
+    margin: 2em;
+    height: 15rem;
+    width: 13rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.score-image {
+    font-size: 8em;
+    margin-bottom: 0.12;
 }
